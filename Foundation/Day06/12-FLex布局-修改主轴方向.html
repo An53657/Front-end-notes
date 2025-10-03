@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            /* 修改主轴方向 垂直方向 侧轴自动变换到水平方向 */
+            flex-direction: column;
+            /* 侧轴在水平 视界效果 垂直居中 */
+            justify-content: center;
+            /* 侧轴在水平 视界效果水平居中 */
+            align-items: center;
+            height: 200px;
+            width: 500px;
+            background-color: palegoldenrod;
+        }
+
+        img{
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../Day03/01-综合案例-新闻详情/1.jpg" alt="">
+        <p>测试</p>
+    </div>
+</body>
+</html>
