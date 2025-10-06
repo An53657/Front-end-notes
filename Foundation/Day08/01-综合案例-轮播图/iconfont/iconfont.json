@@ -1,0 +1,30 @@
+{
+  "id": "5035109",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34452768",
+      "name": "business-icon-feeds-fill",
+      "font_class": "business-icon-feeds-fill",
+      "unicode": "e823",
+      "unicode_decimal": 59427
+    },
+    {
+      "icon_id": "34452769",
+      "name": "business-icon-feeds-logo",
+      "font_class": "business-icon-feeds-logo",
+      "unicode": "e824",
+      "unicode_decimal": 59428
+    },
+    {
+      "icon_id": "34452770",
+      "name": "business-icon-festivals",
+      "font_class": "business-icon-festivals",
+      "unicode": "e825",
+      "unicode_decimal": 59429
+    }
+  ]
+}

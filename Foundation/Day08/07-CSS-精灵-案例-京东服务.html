@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .sever {
+            /* display: flex; */
+            margin: 300px auto;
+            width: 1190px;
+            height: 42px;
+            background-color: palegoldenrod;
+        }
+
+        .sever ul {
+            display: flex;
+        }
+
+        .sever li {
+           padding-left: 40px;
+            display: flex;
+            width: 297px;
+            height: 45px;
+            background: skyblue;
+        }
+
+        .sever li h5 {
+            margin-right: 10px;
+            width: 36px;
+            width: 42px;
+            /* background-color: khaki; */
+            background: url(./imgs/sprite.png) 0 -191px;
+        }
+
+        .sever li:nth-child(2) h5 {
+           background-position: -42px -191px;;
+        }
+
+        .sever li:nth-child(3) h5 {
+            background-position: -81px -191px;
+        }
+
+        .sever li:nth-child(4) h5 {
+            background-position: -123px -191px;
+        }
+
+        .sever li p {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sever">
+        <ul>
+            <li>
+                <h5></h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>多仓直发，极速配送</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>正品行货，精致服务</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>天天低价，畅选无忧</p>
+            </li>
+         
+        </ul>
+    </div>
+</body>
+</html>
