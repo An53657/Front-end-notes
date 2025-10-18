@@ -1,0 +1,44 @@
+# Day11-d1移动web-平面转换-渐变
+
+## 2.平面转换
+1. 平面转换(transform)
+    - 作用：为元素添加动态效果。一般与过度配合使用
+    - 概念：改变盒子在平面内的形态(位移，旋转，缩放，倾向)
+
+2. 平面转换-平移
+   - transform:translast(X轴移动距离，X轴移动距离)
+   - 取值
+        - 像素单位
+        - 百分比(参照盒子自身尺寸计算)
+        - 正负均可
+
+     - 技巧
+          - translast()只写一个值，表示沿X轴移动
+          - 单独设置X或Y轴移动距离：translastX()或translastY()
+
+3. 小结
+     - 给盒子添加向左，向上的位移效果，属性值取值为负
+     - translast()只写一个值表示水平方向了     
+     - 百分比取值参照盒子自身尺寸计算最终结果  
+
+4. 平移实现居中效果
+    - 方法一
+    ```css
+    position:absolute;
+    left:50%;
+    top:50%
+
+    margin-left:-50%;
+    margin-top:-50%;
+
+    width:200px;
+    hight:100px
+    ```
+5. 方法二：百分比参照盒子自身尺寸计算结果
+   ```css
+    position:absoulte;
+    left:50%
+    top:50%
+    transform:traanslast(-50%,-50%)
+   ```
+## 3.渐变
