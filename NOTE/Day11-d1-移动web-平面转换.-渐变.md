@@ -57,10 +57,63 @@
         transform-origin:水平原点位置 垂直原点位置；
         ```
     - 取值
-      - 方位名词(left right bottom center)
+      - 方位名词(left right bottom center)n  
       - 像素单位取值
       - 百分比
 8. 多重转换技巧 先平移在旋转
    transform:translate() rotate()
 
+9. 平面转换-缩放
+   - 属性
+     ```
+     transform: scale(缩放倍数)
+     transform: scale(x轴缩放倍数，y轴缩放倍数)
+    
+     ```
+   - 技巧
+     - 通常，只为scale()设置一个值，表示x轴和y轴等比缩放
+     - 取值大于1表示放大，取值小于1表示缩小
+
+10. 平面转换- 倾向
+    - 属性
+        ```
+         transform:skew();
+
+         ```
+    
+    - 取值
+      - 角度数deg
+   
 ## 3.渐变
+11. 线性渐变
+    - 属性
+    ```
+    background-image: linear-gradient{
+        渐变方向，
+        颜色1 终点位置，
+        颜色2 终点位置，
+        .....
+    };
+    ```
+    - 取值
+      - 渐变方向 可选
+        - to 方位名称
+        - 角度度数
+      终点位置：可选
+         - 百分比
+
+
+12. 径向渐变
+    - 作用
+    - 属性
+      ```
+      background-image: radial-gradient(
+        半径 at 圆心位置,
+        颜色1 终点位置，
+        颜色2 终点位置
+        .....
+      ```
+
+    - 取值
+      - 半径可以是2条，则为椭圆
+      - 圆心位置取值：像素单位数值/百分比/方位名词 
