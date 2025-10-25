@@ -41,4 +41,26 @@
     top:50%
     transform:traanslast(-50%,-50%)
    ```
+
+6. 平面转换-旋转 
+    - 属性：transform: rotate(旋转角度)；
+        - 角度定位是deg
+    - 技巧
+      - 取值正负均可
+      - 取值为正，顺时针
+      - 取值为负，逆时针
+
+7. 平面转换-改变转换原点
+    - 默认情况下：转换原点是盒子中心点
+    - 属性
+        ```html
+        transform-origin:水平原点位置 垂直原点位置；
+        ```
+    - 取值
+      - 方位名词(left right bottom center)
+      - 像素单位取值
+      - 百分比
+8. 多重转换技巧 先平移在旋转
+   transform:translate() rotate()
+
 ## 3.渐变

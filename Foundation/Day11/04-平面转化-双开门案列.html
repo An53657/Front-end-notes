@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            display: flex;
+            margin: 20px auto;
+            width: 1366px;
+            height: 600px;
+            background-image: url(./imgs/bg.jpg);
+            overflow: hidden;
+        }
+
+        .father .left,
+        .father .right {
+             
+            width: 50%;
+            height: 600px;
+            background-image: url(./imgs/fm.jpg );
+            transition: all 0.5s;
+        }
+
+        .father .right {
+             background-position: right 0;
+        }
+
+        .father:hover .left{
+            transform: translate(-100%);
+        }
+
+        .father:hover .right {
+            transform: translateX(100%);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
 </body>
 </html>
