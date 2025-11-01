@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation: change 2s;
+        }
+
+        /* 动画一 宽度从200变化到300 */
+        /* @keyframes change {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 300px;
+            }
+        } */
+
+        /* 动画二  从200*100 变化到300*300 在变化到800*800 */
+        /* 百分比：表示的意思是动画时长的百分比 */
+        @keyframes change {
+            0% {
+                width: 200px;
+                height: 100px;
+            }
+
+            30% {
+                width: 300px;
+                height: 300px;
+            }
+
+            100% {
+                width: 800px;
+                height: 800px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

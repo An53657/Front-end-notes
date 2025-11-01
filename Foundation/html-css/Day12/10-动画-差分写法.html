@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            
+            /* 动画名称 */
+            animation-name: chang;
+
+            /* 动画时长 */
+            animation-duration: 2s;
+
+            /* 动画的重复次数 */
+            animation-iteration-count: infinite;
+
+            /* 动画的执方向 */
+            animation-direction: alternate;
+        }
+
+        /* 动画从200到800 */
+        @keyframes chang {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 800px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

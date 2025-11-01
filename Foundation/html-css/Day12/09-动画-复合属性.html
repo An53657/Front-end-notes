@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            animation: chang 2s;
+
+            /* 速度曲线 linear 匀速 */
+            animation: chang 2s linear;
+
+            /* 速度曲线 steps 分步动画 工作中 配合精灵图使用 */
+            animation: chang 2s steps(3);
+
+            /* 延迟时间 如果有两个时间 第一个是动画时长 第二个是延迟时间 */
+            animation: chang 2s 1s;
+
+            /* 重复次数 infinite 无限循环   */
+            animation: chang 2s infinite; 
+
+            /* 动画方向 alternate 反向 */
+            animation: chang 2s infinite alternate ;
+
+            /* 动画执行完毕的状态 forwards 结束状态 */
+            animation: chang 2s forwards;
+            /* 动画执行完毕的状态 backwards 开始状态(默认) */
+            animation: chang 2s backwards;
+            
+
+        }
+
+        /* 动画 从200变化到500 */
+        @keyframes chang {
+            from {
+                width: 200px;
+            }
+            
+            to {
+                width: 500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

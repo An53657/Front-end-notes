@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: palegoldenrod;
+            transition: all 2s;
+
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .cube div{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .front{
+            background-color: palegreen;
+            transform: translateZ(100px);
+        }
+
+        .back{
+            background-color: peru;
+            transform: translateZ(-100px);
+        }
+
+        .cube:hover{
+            transform: rotateY(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="front">前面</div>
+        <div class="back">后面</div>
+    </div>
+</body>
+</html>

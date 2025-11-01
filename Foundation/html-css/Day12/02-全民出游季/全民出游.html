@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 清除默认样式 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 大背景 */
+    /* 默认情况下 默认html和body高度是零 所以导致cover背景图缩放不成功 */
+    html{
+      height: 100%;
+    }
+
+    body {
+      background: url(./images/f1_1.jpg) no-repeat center 0 / cover  ;
+    }
+    
+    /* 云 */
+    
+    .cloud img{
+      position: absolute;
+      left: 50%;
+    }
+
+    .cloud img:nth-child(1) {
+      margin-left: -250px;
+      top: 20px;
+      animation: cloud  1s infinite alternate linear 0.2s  ;
+    }
+
+    .cloud img:nth-child(2){
+      margin-left: 400px;
+      top: 100px;
+      animation: cloud 1s infinite alternate linear 0.5s;
+    }
+
+    .cloud img:nth-child(3) {
+      margin-left: -550px;
+      top: 200px;
+      animation: cloud 1s infinite alternate linear 0.7s ;
+    }
+
+    /* 云 */
+    @keyframes cloud {
+      100% {
+        transform: translate(20px);
+      }
+    }
+
+    /* 气球 */
+    .ballon img {
+      position: absolute;
+      margin-left: 500px;
+      top: 200px;
+      animation: ballon 1s infinite alternate;
+    }
+
+    @keyframes ballon {
+      100% {
+        transform: translateY(20px);
+      }
+    }
+
+
+    /* 文字 */
+    .text img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% , -50%);
+      /* animation: text 1s; */
+    }
+
+    /* 默认 小 大 小 默认 */
+    @keyframes text {
+      0% {
+        transform: translate(-50% , -50%) scale(1);
+      }
+
+      20% {
+        transform: translate(-50% , -50%) scale(0.3);
+      }
+
+      40% {
+        transform: translate(-50% , -50%) scale(1.2);
+      }
+
+      60% {
+        transform: translate(-50% , -50%) scale(0.1);
+      }
+
+      100% {
+        transform: translate(-50% , -50%) scale(1);
+      }
+    }
+
+    /* nav */
+      .nav img:nth-child(1){
+        position: absolute;
+        margin-left: 400px;
+        top: 700px;
+        animation: move 1s infinite alternate ;
+      }
+
+      .nav img:nth-child(2){
+        position: absolute;
+        margin-left: 600px;
+        top: 700px;
+        animation: move 1s infinite alternate 0.2s ;
+      }
+
+      .nav img:nth-child(3){
+        position: absolute;
+        margin-left: 800px;
+        top: 700px;
+        animation: move 1s infinite alternate 0.4s;
+      }
+
+      @keyframes move {
+        100% {
+          transform: translateY(20px);
+        }
+      }
+  </style>
+</head>
+<body>
+  <!-- 云 -->
+    <div class="cloud">
+      <img src="./images/yun1.png" alt="">
+      <img src="./images/yun2.png" alt="">
+      <img src="./images/yun3.png" alt="">
+    </div>
+
+    <!-- 气球 -->
+     <div class="ballon">
+      <img src="./images/san.png" alt="">
+     </div>
+
+  <!-- 文字 -->
+   <div class="text">
+    <img src="./images/font1.png" alt="">
+   </div>
+
+   <!-- nav -->
+    <div class="nav">
+      <img src="./images/1.png" alt="">
+      <img src="./images/2.png" alt="">
+      <img src="./images/3.png" alt="">
+    </div>
+</body>
+</html>
