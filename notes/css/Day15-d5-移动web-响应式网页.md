@@ -31,4 +31,18 @@
         - 逻辑符和媒体特性可以不写
      ```
 
-## 2. Bootstrap框架
+## 2. Bootstrap框架 
+4. Bootstrap - 简介
+   - Bootstrap框架是由Twitter公司开发维护分前端框架，它提供了大量编好的CSS样式，
+     允许开发者结合一定HTML和JavaScript,快速编写功能完善的网页及常见交互效果
+
+5. 使用步骤
+   - 引入Bootsteap CSS 文件
+   ```
+   <link rel="stylesheet" herf="路径">
+   ```
+
+   - 调用类名
+     ```
+     <div class="container">测试</div>
+     ```
